@@ -1,0 +1,23 @@
+#h {
+    text-align: center;
+}
+
+#banner {
+    width: 800px;
+    height: 250px;
+    background-color: gray;
+    border: 2px solid black;
+    margin: auto;
+}
+
+#name{
+    font-size: 150%;
+}
+
+#boxes {
+    display: flex;
+}
+
+footer {
+    text-align: center;
+}
