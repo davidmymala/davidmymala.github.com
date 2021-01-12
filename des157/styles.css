@@ -41,7 +41,7 @@ header p {
   }
 
 
-#name{
+#toc{
     font-size: 32px;
     font-family: Helvetica, Times;
     font-weight: bold;
@@ -71,7 +71,6 @@ main {
 
 main section h2 {
     color: black;
-    text-decoration: underline;
 }
 
 
