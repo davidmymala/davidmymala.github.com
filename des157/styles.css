@@ -20,7 +20,7 @@
 header p {
     font-family: Helvetica, Times;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 30px;
     animation-duration: 2s;
     animation-name: slidein;
     animation-iteration-count: infinite;
