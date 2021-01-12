@@ -53,6 +53,7 @@ footer {
     padding-top: 25px;
     text-align: center;
     font-family: Helvetica, Times;
+    color: blue; 
 }
 
 body{
@@ -105,6 +106,7 @@ h2{
 
 footer a {
     padding: 25px;
+    color: blue;
 }
 
 header {
