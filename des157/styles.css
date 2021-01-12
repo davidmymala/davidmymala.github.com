@@ -50,6 +50,7 @@ header p {
 
 
 footer {
+    padding-top: 25px;
     text-align: center;
     font-family: Helvetica, Times;
 }
@@ -99,10 +100,6 @@ a:hover{
 
 h2{
     text-align: center;
-}
-
-footer {
-    padding-top: 25px;
 }
 
 footer a {
