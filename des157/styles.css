@@ -18,7 +18,7 @@
 
 
 header p {
-    font-family: helvetica;
+    font-family: Helvetica, Times;
     text-align: center;
     margin-top: 5px;
     animation-duration: 2s;
@@ -43,7 +43,7 @@ header p {
 
 #name{
     font-size: 32px;
-    font-family: Helvetica;
+    font-family: Helvetica, Times;
     font-weight: bold;
     text-align: center;
 }
@@ -51,6 +51,7 @@ header p {
 
 footer {
     text-align: center;
+    font-family: Helvetica, Times;
 }
 
 body{
@@ -80,7 +81,7 @@ section {
     background-color: #BCE8BA;
     width: 300px;
     height: 500px;
-    font-family: helvetica;
+    font-family: Helvetica, Times;
     border: 3px solid #E8C6AE;
 }
 
@@ -109,7 +110,7 @@ footer a {
 }
 
 header {
-    font-family: helvetica;
+    font-family: Helvetica, Times;
     font-size: 32px;
 }
 
