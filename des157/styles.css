@@ -5,19 +5,115 @@
 #banner {
     width: 800px;
     height: 250px;
-    background-color: gray;
-    border: 2px solid black;
+    background-color: #E8C6AE;
+    border: 3px solid black;
     margin: auto;
+    box-sizing: border-box;
 }
+
+#banner:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+
+header p {
+    font-family: helvetica;
+    text-align: center;
+    margin-top: 5px;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 25%;
+      width: 125%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+      color: #C5E9D8;
+    }
+  }
+
 
 #name{
-    font-size: 150%;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align: center;
 }
 
-#boxes {
-    display: flex;
-}
 
 footer {
     text-align: center;
+}
+
+body{
+    max-width: 1200px;
+    min-width: 800px;
+    margin: auto;
+    background-color: #BAE4E8;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+main section h2 {
+    color: black;
+    text-decoration: underline;
+}
+
+
+ul li {
+    list-style-type: none;
+}
+
+section {
+    background-color: #BCE8BA;
+    width: 300px;
+    height: 500px;
+    font-family: helvetica;
+    border: 3px solid #E8C6AE;
+}
+
+li {
+    margin: 10px;
+}
+li a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(94, 245, 24);
+}
+
+h2{
+    text-align: center;
+}
+
+footer {
+    padding-top: 25px;
+}
+
+footer a {
+    padding: 25px;
+}
+
+header {
+    font-family: helvetica;
+    font-size: 32px;
+}
+
+header h2 {
+    font-size: 75%;
+    padding-bottom: 25px; 
 }
