@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Experiment</title>
+</head>
+<body>
+    <h1>DOM Experiment</h1>
+
+    <script>
+        /* Ask for user name and prints out days of the week, randomizing the protein source of that day.
+        Tells user a randomized number of their weight that week. */
+
+        var name = prompt("What is your name?", "");
+        console.log(`Welcome! ${name}`);
+
+        //days of the week
+        var days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+        
+        //protein sources
+        var protein = ["chicken", "eggs", "turkey", "salmon", "beef", "tuna"]
+
+    
+        //Random function from function examples
+        function randomInt(min, max) {
+            return Math.floor((max - min + 1) * Math.random()) + min;
+        }
+
+        //prints out days of the week
+        function proteinday() {
+            for( var i = 0; i<days.length; i++) {
+                console.log(days[i] + `: Your #1 Protein Source was ${protein[randomInt(0,5)]}`);
+            }
+        }
+
+        proteinday();
+
+        //lets user know what their average weight was this week.
+        function weightweek() {
+            console.log(`Your average weight this week was: ${randomInt(160,165)} pounds`);
+        }
+
+        weightweek();
+       
+
+
+
+    </script>
+
+</body>
+</html>
