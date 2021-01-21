@@ -1,0 +1,58 @@
+footer a {
+    padding: 25px;
+    color: blue;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding-top: 25px;
+}
+
+#banner {
+    width: 750px;
+    height: 200px;
+    background-color: lightskyblue;
+    margin: 50px auto;
+    border-radius: 25px;
+}
+
+#pagetitle {
+    padding: 30px;
+    font-size: 40px;
+    background-color: white;
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 25px;
+    font-family: "Lora", "Arial";
+}
+
+
+article h2 {
+    text-align: center;
+    margin-right: 400px;
+}
+
+article p {
+    margin: 25px auto;
+    width: 750px;
+    font-family: "Arial";
+    font-size: 20px;
+    text-indent: 50px;
+    
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+a {
+    color: blue;
+}
