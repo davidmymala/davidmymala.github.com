@@ -19,6 +19,14 @@ footer {
 #banner {
     width: 750px;
     height: 200px;
+    background-color: red;
+    margin: 50px auto;
+    border-radius: 25px;
+}
+
+#break1 {
+    width: 750px;
+    height: 200px;
     background-color: lightskyblue;
     margin: 50px auto;
     border-radius: 25px;
@@ -34,6 +42,10 @@ footer {
     font-family: "Lora", "Arial";
 }
 
+#modals {
+    text-align: center;
+    margin-left: 100px;
+}
 
 article h2 {
     text-align: center;
