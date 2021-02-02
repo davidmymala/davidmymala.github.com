@@ -1,5 +1,6 @@
 (function(){
-    "use strict";
+    "use strict"; 
+    console.log("reading js");
 
     const myForm = document.querySelector("#myform");
     const madlib = document.querySelector("#madlib");
@@ -21,7 +22,7 @@
         const food4 = document.querySelector("#food4").value;
 
 
-        const  output  = [`The <strong>${food1}</strong> was excellent along with <strong>${food2}</strong>, <strong>${food3},</strong> and <strong>${food4}</strong>. The seasoning was on point! I will be looking forward to come again!`, `The <strong>${food1}</strong> was terrible alongside the horrible <strong>${food2}</strong>, <strong>${food3}</strong>, and <strong>${food4}</strong>. The seasoning was terrible. I will not be returning to this establishment.`]; 
+        const  output  = [`The <strong>${food1}</strong> was excellent as well as the <strong>${food2}</strong>, <strong>${food3},</strong> and <strong>${food4}</strong>. The seasoning was on point! I will be looking forward to come again!`, `The <strong>${food1}</strong> was terrible as well as the <strong>${food2}</strong>, <strong>${food3}</strong>, and <strong>${food4}</strong>. Also, the seasoning was not up to standards. I will not be returning to this establishment.`]; 
 
         const randomNum = Math.floor(Math.random() * 2)
 
@@ -34,33 +35,14 @@
         madlibMain.style.fontFamily = "Calibri";
 
         madlibMain.innerHTML += `
+        <a class = "button" href="index.html">&otimes;</a>
         <h1> ${foode} </h1>
-        <p> ${randomOutput} </p>
-        <a href="index.html"> refresh </a>`
+        <p> ${randomOutput} </p>`
 
     
 
-        
-
-
-
     
 
-     /* if (noun1 && noun2 && adj1 && verb1 && verb2) {
-            var myText = `Here are the words: ${noun1}, ${noun2}, ${adj1}, ${verb1} and ${verb2}`;
-
-        }
-        else {
-            var myText = "Please give me words so I can make your Mad Lib!";
-        }
-
-        madlib.innerHTML = myText;
-
-        let formData = document.querySelectorAll("input[type=text]");
-
-        for (let eachField of formData) {
-            eachField.value = "";
-        } */
 
     });
 

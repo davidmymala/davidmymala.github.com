@@ -5,17 +5,18 @@ body {
 h1{
     text-align:center;
     background-color: #D0F7EB;
+    border-radius: 25px;
     width: 50%;
     margin: auto;
-    font-family: Calibri;
-    font-size: 50px;
+    font-family: 'Aref Ruqaa', serif, Calibri;
+    font-size: 48px;
 }
 
 #myform {
     position: relative;
     margin: auto;
     width: 200px;
-    font-family: Calibri, Arial;
+    font-family: Calibri, Arial, Times;
     font-weight: bold;
 }
 
@@ -29,17 +30,31 @@ h1{
     display: none;
 }
 
-
-
 #madlib-main{
     text-align: center;
     margin: auto;
     width: 500px;
-    padding-top: 25px;
+}
+
+#madlib-main .button {
+    text-decoration: none;
+    font-size: 36px;
+    margin-left: 575px;
+    border: none;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    outline: none;
 }
 
 #madlib-main h1 {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    background-color: #D0F7EB;
+    border-radius: 25px;
+}
+
+#madlib-main p {
+    font-size: 24px;
 }
 
 input[type=submit] {
@@ -64,6 +79,9 @@ input[type=reset] {
     border-width: 25px;
 }
 
+input:focus {
+    background-color: yellow;
+}
 
 body {
     background-color: #D0DEC3;
@@ -108,30 +126,41 @@ main h2 {
 
 #stamp {
     position: absolute;
-    left: 20px;
-    top: 5px;
+    left: 30px;
+    top: 25px;
     right: 30px;
     width: 250px;
+    animation: glow 1s infinite alternate;
+    border-radius: 25px;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px 5px #D0F7EB;
+    }
+    to {
+        box-shadow: 0 0 50px 20px #D0F7EB;
+    }
 }
 
 #chef {
     position: relative;
     margin: 5px auto;
-    width: 175px;
     left: 60px;
-    overflow: hidden;
+    width: 175px;
 }
 
 #spatula {
     position: relative;
-    margin: 5px auto;
     width: 150px;
     height: 150px;
-    top: 120px;
+    top: 90px;
     right: 100px;
-    transition: top 2s ease-in-out;
+    transition: top 1s ease-in-out;
 }
 
 #spatula:hover {
-    top: 25%;
+    top: 20px;
 }
+
+
