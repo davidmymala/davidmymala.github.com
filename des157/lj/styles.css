@@ -19,15 +19,24 @@ footer {
 #banner {
     width: 750px;
     height: 200px;
-    background-color: red;
+    background-color: peachpuff;
     margin: 50px auto;
     border-radius: 25px;
 }
+
 
 #banner1 {
     width: 750px;
     height: 200px;
     background-color: lightskyblue;
+    margin: 50px auto;
+    border-radius: 25px;
+}
+
+#banner2 {
+    width: 750px;
+    height: 200px;
+    background-color: red;
     margin: 50px auto;
     border-radius: 25px;
 }
@@ -45,6 +54,11 @@ footer {
 #modals {
     text-align: center;
     margin-left: 100px;
+}
+
+#memorycloud {
+    position: relative;
+    right: 125px;
 }
 
 article h2 {
