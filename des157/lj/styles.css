@@ -19,7 +19,7 @@ footer {
 #banner {
     width: 750px;
     height: 200px;
-    background-color: peachpuff;
+    background-color: lavender;
     margin: 50px auto;
     border-radius: 25px;
 }
@@ -37,6 +37,14 @@ footer {
     width: 750px;
     height: 200px;
     background-color: red;
+    margin: 50px auto;
+    border-radius: 25px;
+}
+
+#banner3 {
+    width: 750px;
+    height: 200px;
+    background-color: peachpuff;
     margin: 50px auto;
     border-radius: 25px;
 }
@@ -61,9 +69,20 @@ footer {
     right: 125px;
 }
 
+#journal4 {
+    position: relative;
+    right: 125px;
+}
+
 article h2 {
     text-align: center;
     margin-right: 400px;
+}
+
+article h3 {
+    text-align: center;
+    margin-right: 400px;
+    text-decoration: underline;
 }
 
 article p {
@@ -73,6 +92,22 @@ article p {
     font-size: 20px;
     text-indent: 50px;
     
+}
+
+#babypic {
+    height: 300px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#plushie {
+    margin: auto;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
