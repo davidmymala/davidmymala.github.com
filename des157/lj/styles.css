@@ -110,6 +110,10 @@ article p {
     margin-right: auto;
 }
 
+figcaption{
+    text-align: center;
+}
+
 body {
     background-color: whitesmoke;
 }
