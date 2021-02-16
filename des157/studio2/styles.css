@@ -27,9 +27,10 @@ img {
 .q{
     margin-top: 100px;
     margin-bottom: 125px;
-    display: flex;
+
+    /*display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 #two {
@@ -72,6 +73,9 @@ img {
 
 body {
     background-color: #6EFAA5;
+    height: 1366px;
+    width: 768px;
+    margin: auto;
 }
 
 
