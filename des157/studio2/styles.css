@@ -34,8 +34,9 @@ img {
 }
 
 #two {
-    width: 450px;
-    height: 338px;
+    /* width: 450px;
+    height: 338px; */
+    width: 100%;
     margin-left: 5px;
 }
 
@@ -45,8 +46,9 @@ img {
 
 #three {
     margin-right: 5px;
-    width: 400px;
-    height: 400px;
+    /* width: 400px;
+    height: 400px; */
+    width: 100%;
 }
 
 #three:hover {
@@ -72,7 +74,7 @@ img {
 
 
 body {
-    background-color: #6EFAA5;
+    background-color: C6E8F0;
     height: 1366px;
     width: 768px;
     margin: auto;
@@ -132,9 +134,9 @@ figcaption{
 footer a {
     padding: 20px;
     margin: 50px;
-    color: #6EFAA5;
+    color: 5EDAEF;
     border-radius: 25px;
-    background-color: #356147;
+    background-color: #97CBD3;
 }
 
 footer {

@@ -8,7 +8,7 @@
     let state = 0;
 
     const theImg = document.getElementById("babypic");
-
+    const theImg2 = document.getElementById("two");
     //cursor style change when hovering over my babypic img.
     theImg.style.cursor = "zoom-in";
 
@@ -37,6 +37,7 @@
         }
 
     });
+
 
 
 
