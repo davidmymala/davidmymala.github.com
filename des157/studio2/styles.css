@@ -25,6 +25,10 @@ img {
     margin-bottom: 50px;
 }
 
+#container:hover{
+    box-shadow: 10px 0px 25px #535353;
+}
+
 .q{
     overflow: hidden;
     max-width: 600px;
@@ -32,9 +36,14 @@ img {
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
+
    /*  display: flex;
     flex-direction: row;
     justify-content: center; */
+}
+
+.q:hover {
+    box-shadow: 10px 0px 25px #535353;
 }
 
 .r {
@@ -46,22 +55,19 @@ img {
     border-radius: 30px;
 }
 
+.r:hover {
+    box-shadow: 10px 0px 25px #535353;   
+}
+
 #two {
-    /* width: 450px;
-    height: 338px; */
    width: 600px;
    height: 450px;
 }
 
-#two:hover {
-    box-shadow: 10px 0px 25px #919191;   
-}
 
 #three {
-    margin-right: 5px;
-    /* width: 400px;
-    height: 400px; */
-    width: 100%;
+    width: 500px;
+    height: 500px;
 }
 
 #three:hover {
@@ -136,6 +142,8 @@ h2{
 h4{
     font-family: "Kreon", serif;
     text-align: center;
+    font-weight: 400;
+    font-style: normal;
 }
 
 footer a {
