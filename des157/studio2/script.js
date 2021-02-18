@@ -9,6 +9,7 @@
 
     const theImg = document.getElementById("babypic");
     const theImg2 = document.getElementById("two");
+    const theImg3 = document.getElementById("three");
     //cursor style change when hovering over my babypic img.
     theImg.style.cursor = "zoom-in";
 
@@ -33,6 +34,52 @@
             theImg.style.width = "500px";
             theImg.style.marginTop = 0;
             theImg.style.marginLeft = 0;
+            state = 0;
+        }
+
+    });
+
+    //Settings for second image
+    theImg2.addEventListener("click", function() {
+        if (state == 0) {
+            theImg2.style.cursor = "zoom-out";
+            theImg2.style.height = "900px";
+            theImg2.style.width = "1200px";
+            theImg2.style.marginTop = "-100px";
+            theImg2.style.marginLeft = "-250px";
+            state = 1;
+        }
+
+        // resets the image
+        else if (state == 1) {
+            theImg2.style.cursor = "zoom-in";
+            theImg2.style.height = "450px";
+            theImg2.style.width = "600px";
+            theImg2.style.marginTop = 0;
+            theImg2.style.marginLeft = 0;
+            state = 0;
+        }
+
+    });
+
+    //Settings for third image
+    theImg3.addEventListener("click", function() {
+        if (state == 0) {
+            theImg3.style.cursor = "zoom-out";
+            theImg3.style.height = "700px";
+            theImg3.style.width = "700px";
+            theImg3.style.marginTop = "-200px";
+            theImg3.style.marginLeft = "-125px";
+            state = 1;
+        }
+
+        // resets the image
+        else if (state == 1) {
+            theImg3.style.cursor = "zoom-in";
+            theImg3.style.height = "500px";
+            theImg3.style.width = "500px";
+            theImg3.style.marginTop = 0;
+            theImg3.style.marginLeft = 0;
             state = 0;
         }
 
