@@ -19,7 +19,7 @@ footer {
 #banner {
     width: 750px;
     height: 200px;
-    background-color: lavender;
+    background-color: rebeccapurple;
     margin: 50px auto;
     border-radius: 25px;
 }
@@ -49,6 +49,14 @@ footer {
     border-radius: 25px;
 }
 
+#banner4 {
+    width: 750px;
+    height: 200px;
+    background-color: lavender;
+    margin: 50px auto;
+    border-radius: 25px;
+}
+
 #pagetitle {
     padding: 30px;
     font-size: 40px;
@@ -67,6 +75,11 @@ footer {
 #memorycloud {
     position: relative;
     right: 125px;
+}
+
+#gamedesign {
+    position: relative;
+    right: 50px;
 }
 
 #journal4 {
