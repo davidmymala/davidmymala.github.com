@@ -42,8 +42,8 @@
 
 
     function setUpTurn(){
-        game.innerHTML = `<p id = "playerroll">Roll the dice for the <strong>${gameData.players[gameData.index]}</strong></p> <img src = "images/die1.jpg" alt="die1" width = "400px">
-        <img src = "images/die5.jpg" alt ="die5" width = "400px">`;
+        game.innerHTML = `<p id = "playerroll">Roll the dice for the <strong>${gameData.players[gameData.index]}</strong></p> <img src = "images/die1.jpg" alt="die1" width = "400">
+        <img src = "images/die5.jpg" alt ="die5" width = "400">`;
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
 
         //incorporating sounds
@@ -71,8 +71,8 @@
 
         game.innerHTML = `<p id = "playerroll2">Roll the dice for the <strong>${gameData.players[gameData.index]}</strong></p>`;
 
-        game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}" width = "400px">
-        <img src = "${gameData.dice[gameData.roll2-1]}" width = "400px">`;
+        game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}" width = "400">
+        <img src = "${gameData.dice[gameData.roll2-1]}" width = "400">`;
 
         gameData.rollSum = gameData.roll1 + gameData.roll2;
         console.log(gameData);
