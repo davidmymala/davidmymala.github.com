@@ -43,9 +43,13 @@
 
 
     function setUpTurn(){
-        game.innerHTML = `<p id = "playerroll">Roll the dice for the <strong>${gameData.players[gameData.index]}</strong></p> <img src = "images/die1.jpg" alt="die1" width = "400">
-        <img src = "images/die5.jpg" alt ="die5" width = "400">`;
+        //randomizes two images when first start game.
+        gameData.roll1 = Math.floor(Math.random() * 6) + 1;
+        gameData.roll2 = Math.floor(Math.random() * 6) + 1;
+        game.innerHTML = `<p id = "playerroll">Roll the dice for the <strong>${gameData.players[gameData.index]}</strong></p> <img src="${gameData.dice[gameData.roll1-1]}" width = "400">
+        <img src = "${gameData.dice[gameData.roll2-1]}" width = "400">`;
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
+
 
         //incorporating sounds
         const rollSound = new Audio('media/magic-chime-01.mp3');
