@@ -32,7 +32,7 @@
         });
 
         //incorporating sounds
-        const beepSound = new Audio('sounds/button-37.mp3');
+        const beepSound = new Audio('media/button-37.mp3');
         beepSound.play();
 
         console.log(gameData.index);
@@ -47,7 +47,7 @@
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
 
         //incorporating sounds
-        const rollSound = new Audio('sounds/magic-chime-01.mp3');
+        const rollSound = new Audio('media/magic-chime-01.mp3');
         rollSound.play();
 
         document.getElementById('roll').addEventListener('click', function(){
@@ -111,7 +111,7 @@
             });
 
             //incorporating sounds
-            const elseSound = new Audio('sounds/magic-chime-01.mp3');
+            const elseSound = new Audio('media/magic-chime-01.mp3');
             elseSound.play();
 
             //check winning condition
@@ -130,7 +130,7 @@
             document.getElementById('quit').innerHTML = "Start a New Game?";
 
             //incorporating sounds
-            const winSound = new Audio('sounds/button-14.mp3');
+            const winSound = new Audio('media/button-14.mp3');
             winSound.play();
         }
 
