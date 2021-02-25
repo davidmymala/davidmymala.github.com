@@ -1,7 +1,6 @@
 body {
     max-width: 1368px;
     max-height: 768px;
-    text-align: center;
     margin: auto;
 }
 
@@ -15,4 +14,9 @@ h1 {
 article h2 {
     text-align: left;
     color: black;
+}
+
+article p {
+    font-size: 24px;
+    width: 500px;
 }
