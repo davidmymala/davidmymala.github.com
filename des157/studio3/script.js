@@ -10,6 +10,9 @@
     const overlay = document.getElementById('overlay');
     const gamecontent = document.getElementById('gamecontent');
 
+    const openBtn = document.querySelectorAll(".open");
+    const closeBtn = document.querySelectorAll(".close");
+
     const gameData = {
         dice: ['images/die1.jpg', 'images/die2.jpg', 'images/die3.jpg', 'images/die4.jpg', 'images/die5.jpg', 'images/die6.jpg'],
         players: ['player 1', 'player 2'],
@@ -47,8 +50,8 @@
         gameData.roll1 = Math.floor(Math.random() * 6) + 1;
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
 
-        game.innerHTML = `<p id = "playerroll">Roll the dice for the <strong>${gameData.players[gameData.index]}</strong></p> <img src="${gameData.dice[gameData.roll1-1]}" width = "400">
-        <img src = "${gameData.dice[gameData.roll2-1]}" width = "400">`;
+        game.innerHTML = `<p id = "playerroll">Roll the dice for the <strong>${gameData.players[gameData.index]}</strong></p> <img src="${gameData.dice[gameData.roll1-1]}" width = "300">
+        <img src = "${gameData.dice[gameData.roll2-1]}" width = "300">`;
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
 
         //incorporating sounds
@@ -76,8 +79,8 @@
 
         game.innerHTML = `<p id = "playerroll2">Roll the dice for the <strong>${gameData.players[gameData.index]}</strong></p>`;
 
-        game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}" width = "400">
-        <img src = "${gameData.dice[gameData.roll2-1]}" width = "400">`;
+        game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}" width = "300">
+        <img src = "${gameData.dice[gameData.roll2-1]}" width = "300">`;
 
         gameData.rollSum = gameData.roll1 + gameData.roll2;
         console.log(gameData);
@@ -104,7 +107,7 @@
         //if neither die is a 1...
         else {
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-            actionArea.innerHTML = '<button id = "rollagain">Roll again</button> or <button id = "pass"> Pass </button>';
+            actionArea.innerHTML = '<button id = "rollagain">Roll again</button><button id = "pass"> Pass </button>';
 
             document.getElementById('rollagain').addEventListener('click', function(){
                 setUpTurn();
@@ -152,11 +155,33 @@
         score.style.textAlign = "center";
     }
     
+    //open button overlay
+    for(const eachBtn of openBtn) {
+        eachBtn.addEventListener("click", function(event){
+            event.preventDefault();
+            const thisBtn = event.target.id;
+            document.getElementById('ol-des').className = "overlay showing";
+        });
+    }
+
+    //close button overlay
+    for(const eachBtn of closeBtn) {
+        eachBtn.addEventListener("click", function(event){
+            event.preventDefault();
+            document.querySelector(".showing").className = "overlay hidden";
+        });
+    }
+
+
+    //escape key for winning function
     document.addEventListener("keydown", function(event){
         if(event.key === "Escape") {
             document.getElementById("overlay").className = "hidden";
         }
     });
+
+
+
 
 
 
