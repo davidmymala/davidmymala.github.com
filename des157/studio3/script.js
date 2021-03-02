@@ -87,7 +87,7 @@
 
         // if two 1's are rolled...
         if(gameData.rollSum === 2){
-            game.innerHTML += `<p>Oh snap! Snake eyes! </p>`;
+            game.innerHTML += `<p id = "alt2">Oh snap! Snake eyes! </p>`;
             gameData.score[gameData.index] = 0;
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             //Show the current score
