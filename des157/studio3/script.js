@@ -7,9 +7,10 @@
     const game = document.getElementById('game');
     const score = document.getElementById('score');
     const actionArea = document.getElementById('actions');
+
+
     const overlay = document.getElementById('overlay');
     const gamecontent = document.getElementById('gamecontent');
-
     const openBtn = document.querySelectorAll(".open");
     const closeBtn = document.querySelectorAll(".close");
 
@@ -47,11 +48,9 @@
 
     function setUpTurn(){
         
-        gameData.roll1 = Math.floor(Math.random() * 6) + 1;
-        gameData.roll2 = Math.floor(Math.random() * 6) + 1;
 
-        game.innerHTML = `<p id = "playerroll">Roll the dice for the <strong>${gameData.players[gameData.index]}</strong></p> <img src="${gameData.dice[gameData.roll1-1]}" width = "300">
-        <img src = "${gameData.dice[gameData.roll2-1]}" width = "300">`;
+        game.innerHTML = `<p id = "playerroll">Roll the dice for the <strong>${gameData.players[gameData.index]}</strong></p> <img src="images/die1.jpg" width = "300">
+        <img src = "images/die5.jpg" width = "300">`;
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
 
         //incorporating sounds
@@ -62,6 +61,7 @@
             throwDice();
         });
 
+        //styles
         gamecontent.style.backgroundColor = "#81749170";
         game.style.maxWidth = "1100px";
         game.style.margin = "auto";
@@ -86,14 +86,14 @@
         console.log(gameData);
 
         // if two 1's are rolled...
-        if(gameData.rollsum === 2){
+        if(gameData.rollSum === 2){
             game.innerHTML += `<p>Oh snap! Snake eyes! </p>`;
             gameData.score[gameData.index] = 0;
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             //Show the current score
             showCurrentScore();
             setTimeout(setUpTurn, 2000);
-            //console.log('snake eyes were rolled');
+            console.log('snake eyes were rolled');
         }
 
         // if either die is a 1...
