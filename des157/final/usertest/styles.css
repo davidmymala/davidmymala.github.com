@@ -16,6 +16,8 @@ header{
 }
 
 div{
+    position: relative;
+    top: 200px;
     text-align: center;
 }
 
@@ -78,10 +80,12 @@ p {
 }
 
 #myform {
+    position: relative;
+    bottom: 200px;
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    width: 25%;
+    width: 300px;
     padding: 25px;
     background-color: gainsboro;
 }
