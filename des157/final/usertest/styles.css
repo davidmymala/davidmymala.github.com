@@ -55,8 +55,8 @@ div{
 /* cursor transforms from black to white */
   
 @keyframes cursor{
-    from{border-left-color: red;}
-    to{border-left-color: white;}
+    from{border-right-color: black;}
+    to{border-right-color: white;}
 }
 
 #questions1 {
