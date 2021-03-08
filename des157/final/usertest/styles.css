@@ -1,0 +1,139 @@
+body {
+    max-width: 1366px;
+    max-height: 768px;
+    margin: auto;
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
+
+#title {
+    font-size: 72px;
+    color: #A8D128;
+    font-family: 'Roboto', sans-serif;
+}
+
+div{
+    text-align: center;
+}
+
+#hat {
+    width: 250px;
+}
+
+
+#typewriter {
+    font-family: 'Arial';  
+    font-size: 28px;
+    color: black;
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;  
+    border-right: solid 2px black;
+}
+
+/* typewriter animation */
+
+#typewriter {
+    animation: atext 5s steps(29,end) infinite,
+               cursor 400ms steps(29,end) infinite;
+}
+  
+/* animated text variable */
+  
+@keyframes atext{
+    from{width: 0;}
+    to{width: 350px;}
+}
+  
+/* cursor transforms from black to white */
+  
+@keyframes cursor{
+    from{border-left-color: red;}
+    to{border-left-color: white;}
+}
+
+#questions1 {
+    font-weight: bold;
+}
+
+#questions2 {
+    font-weight: bold;
+}
+#questions3 {
+    font-weight: bold;
+}
+#questions4 {
+    font-weight: bold;
+}
+p {
+    width: 500px;
+}
+
+#proto {
+    width: 800px;
+}
+
+#myform {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 25%;
+    padding: 25px;
+    background-color: gainsboro;
+}
+
+input {
+    padding: 25px;
+    margin: 10px;
+}
+
+input:hover{
+    background-color: darkgray;
+}
+
+
+footer a {
+    margin: 50px;
+    color: blue;
+}
+
+
+
+footer {
+    text-align: center;
+    font-family: Calibri, Helvetica, Times, sans-serif;
+    color: black;
+    font-size: 24px;
+    padding-top: 25px;
+}
+
+
+
+/* Overlay */
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+#overlay {
+    position: absolute;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
