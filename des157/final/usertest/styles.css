@@ -117,6 +117,7 @@ footer {
     font-family: Calibri, Helvetica, Times, sans-serif;
     color: black;
     font-size: 24px;
+    z-index: -1;
 }
 
 
