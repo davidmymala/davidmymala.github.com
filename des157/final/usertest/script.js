@@ -44,6 +44,7 @@
     Btn4.addEventListener('mouseover', function(){
         const beep = new Audio ('audio/beep-21.mp3');
         beep.play();
+        Btn4.style.hover
     });
     
     //click functions
