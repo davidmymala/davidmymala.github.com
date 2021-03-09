@@ -23,9 +23,6 @@ div{
     text-align: center;
 }
 
-#hat {
-    width: 250px;
-}
 
 
 #typewriter {
@@ -139,8 +136,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 700px;
-    height: 700px;
+    width: 50vw;
+    height: 50vh;
     transition-property: opacity, visibility;
     transition-duration: 1s;
     transition-timing-function: ease;
@@ -186,4 +183,31 @@ audio {
 
 #button5:hover {
     background-color: lightgreen;
+}
+
+.pictures-overflow {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+#hat {
+    position: relative;
+    margin: auto;
+    left: 75px;
+    width: 250px;
+}
+
+#spatula {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: 70px;
+    right: 120px;
+    transition: top 1s ease-in-out;
+}
+
+#spatula:hover {
+    top: 20px;
 }
