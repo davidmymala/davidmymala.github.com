@@ -14,7 +14,7 @@
     const closeBtns = document.querySelectorAll(".close");
 
     //Alert Message
-    alert('Welcome to the User Test!\n1st step: Click on one of the food buttons\n2nd step: Click on the music icon\nThird Step: Hover over one of the buttons');
+    alert('Welcome to the User Test!\n1: Click on the music button on the bottom right.\n2: Hover over the food buttons.\n3: Click on all of the food buttons.');
 
 
     //Sound effects for buttons. Will change later to target all.
