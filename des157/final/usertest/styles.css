@@ -23,7 +23,9 @@ div{
     text-align: center;
 }
 
-
+h2 {
+    color: white;
+}
 
 #typewriter {
     font-family: 'Arial';  
@@ -142,6 +144,7 @@ footer {
     transition-duration: 1s;
     transition-timing-function: ease;
     z-index: 2;
+    overflow: hidden;
 }
 
 
@@ -159,6 +162,7 @@ footer {
     outline: none;
 }
 
+/* Overlay */
 audio {
     position: fixed;
     bottom: 0;
@@ -218,4 +222,24 @@ audio {
     left: 2%;
     top: 2%;
     width: 200px;
+}
+
+.box {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: -50px;
+    position: relative;
+   /*  animation: animation1 3s ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+}
+
+
+#placeholder {
+    position: relative;
+    width: 25%;
+    left: 65%;
+    color: white;
 }

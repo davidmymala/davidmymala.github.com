@@ -10,7 +10,7 @@
     const Btn4 = document.getElementById('button5');
 
     const overlay = document.getElementById('overlay');
-
+    const box = document.getElementById('box');
     const closeBtns = document.querySelectorAll(".close");
 
     //Alert Message
@@ -56,6 +56,7 @@
     Btn1.addEventListener('click', function(){
         overlay.style.backgroundColor = "blue";
         overlay.className = 'showing';
+        box;
     });
 
     Btn2.addEventListener('click', function(){
@@ -86,5 +87,6 @@
             document.querySelector(".showing").className = "overlay hidden";
         });
     }
+
 
 })();
