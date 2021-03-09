@@ -114,7 +114,7 @@ footer {
     font-family: Calibri, Helvetica, Times, sans-serif;
     color: black;
     font-size: 24px;
-    z-index: -1;
+    z-index: 1;
 }
 
 
@@ -141,6 +141,7 @@ footer {
     transition-property: opacity, visibility;
     transition-duration: 1s;
     transition-timing-function: ease;
+    z-index: 2;
 }
 
 
