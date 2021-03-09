@@ -212,3 +212,10 @@ audio {
 #spatula:hover {
     top: 20px;
 }
+
+#sun {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    width: 200px;
+}
