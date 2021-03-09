@@ -2,7 +2,6 @@
     "use strict";  
     console.log('reading js');
 
-    const music = document.getElementById('play');
 
     const Btn = document.getElementById('button1');
     const Btn1 = document.getElementById('button2');
@@ -12,21 +11,10 @@
 
     const overlay = document.getElementById('overlay');
 
+    const closeBtns = document.querySelectorAll(".close");
+
     //Alert Message
     alert('Welcome to the User Test!\n1st step: Click on one of the food buttons\n2nd step: Click on the music icon\nThird Step: Hover over one of the buttons');
-
-    music.addEventListener('click', function(){
-        
-        //incorporating sounds
-        const sound = new Audio('audio/etherealeternity.mp3');
-
-        if(sound.paused) {
-            sound.play();
-        }
-        else{
-            sound.pause();
-        }
-    });
 
 
     //Sound effects for buttons. Will change later to target all.
@@ -91,6 +79,11 @@
     });
     
 
-
+    for(const eachBtn of closeBtns) {
+        eachBtn.addEventListener("click", function(event){
+            event.preventDefault();
+            document.querySelector(".showing").className = "overlay hidden";
+        });
+    }
 
 })();
