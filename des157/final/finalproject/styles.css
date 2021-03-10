@@ -1,0 +1,245 @@
+body {
+    max-width: 1366px;
+    max-height: 768px;
+    margin: auto;
+    text-align: center;
+    background-color: ivory;
+    overflow: hidden;
+}
+
+header{
+    text-align: center;
+}
+
+#title {
+    font-size: 72px;
+    color: #A8D128;
+    font-family: 'Roboto', sans-serif;
+}
+
+div{
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+#typewriter {
+    font-family: 'Arial';  
+    font-size: 28px;
+    color: black;
+    margin: auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;  
+    border-right: solid 2px black;
+}
+
+/* typewriter animation */
+
+#typewriter {
+    animation: atext 5s steps(29,end) infinite,
+               cursor 400ms steps(29,end) infinite;
+}
+  
+/* animated text variable */
+  
+@keyframes atext{
+    from{width: 0;}
+    to{width: 350px;}
+}
+  
+/* cursor transforms from black to white */
+  
+@keyframes cursor{
+    from{border-right-color: black;}
+    to{border-right-color: white;}
+}
+
+#questions1 {
+    font-weight: bold;
+}
+
+#questions2 {
+    font-weight: bold;
+}
+#questions3 {
+    font-weight: bold;
+}
+#questions4 {
+    font-weight: bold;
+}
+p {
+    width: 500px;
+}
+
+#proto {
+    width: 800px;
+}
+
+#myform {
+    position: relative;
+    bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 300px;
+    padding: 25px;
+    background-color: #d8d8ce;
+}
+
+input {
+    padding: 25px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:hover{
+    background-color: darkgray;
+}
+
+
+footer a {
+    margin: 50px;
+    color: blue;
+}
+
+
+
+footer {
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+    font-family: Calibri, Helvetica, Times, sans-serif;
+    color: black;
+    font-size: 24px;
+    z-index: 1;
+}
+
+
+/* Overlay */
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+#overlay {
+    position: absolute;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 50vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+.corner {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Overlay */
+audio {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
+
+#button1:hover {
+    background-color: red;
+}
+
+#button2:hover {
+    background-color: blue;
+}
+
+#button3:hover {
+    background-color: yellow;
+}
+
+#button4:hover {
+    background-color: green;
+}
+
+#button5:hover {
+    background-color: lightgreen;
+}
+
+.pictures-overflow {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+#hat {
+    position: relative;
+    margin: auto;
+    left: 75px;
+    width: 250px;
+}
+
+#spatula {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: 70px;
+    right: 120px;
+    transition: top 1s ease-in-out;
+}
+
+#spatula:hover {
+    top: 20px;
+}
+
+#sun {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    width: 200px;
+}
+
+.box {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: -50px;
+    position: relative;
+   /*  animation: animation1 3s ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+}
+
+
+#placeholder {
+    position: relative;
+    width: 25%;
+    left: 65%;
+    color: white;
+}
