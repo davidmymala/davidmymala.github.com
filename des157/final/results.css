@@ -1,0 +1,41 @@
+body {
+    max-width: 1366px;
+    max-height: 768px;
+    margin: auto;
+    background-color: ivory;
+}
+
+h1{
+    text-align: center;
+}
+
+article {
+    text-align: center;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    width: 475px;
+    margin: auto;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+}
+
+footer a {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.images {
+    padding-top: 100px;
+    margin: auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+h2{
+    text-decoration: underline;
+}
