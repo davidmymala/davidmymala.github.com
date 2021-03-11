@@ -66,6 +66,7 @@
         placeholder.innerHTML = `${output3}`;
         document.body.style.backgroundColor = '#3B3837';
     });
+
     Btn3.addEventListener('click', function(){
         overlay.style.backgroundColor = "green";
         overlay.className = 'showing';
@@ -76,6 +77,7 @@
         placeholder.innerHTML = `${output4}`;
         document.body.style.backgroundColor = '#3B3837';
     });
+    
     Btn4.addEventListener('click', function(){
         overlay.style.backgroundColor = "lightgreen";
         overlay.className = 'showing';

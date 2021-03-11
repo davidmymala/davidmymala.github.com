@@ -95,7 +95,7 @@ p {
 input {
     padding: 25px;
     margin: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 input:hover{
@@ -139,7 +139,7 @@ footer {
     top: 50%;
     left: -50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
+    width: 45vw;
     height: 50vh;
     transition-property: opacity, visibility;
     transition-duration: 1s;
