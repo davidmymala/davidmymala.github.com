@@ -116,7 +116,7 @@ footer {
     text-align: center;
     font-family: Calibri, Helvetica, Times, sans-serif;
     color: black;
-    font-size: 24px;
+    font-size: 18px;
     z-index: 1;
 }
 
@@ -135,7 +135,7 @@ footer {
 
 #overlay {
     position: absolute;
-    background-color: red;
+    background-color: white;
     top: 50%;
     left: -50%;
     transform: translate(-50%, -50%);
@@ -169,7 +169,7 @@ audio {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 300px;
+    width: 25%;
 }
 
 #button1:hover {
@@ -231,12 +231,11 @@ audio {
     transition: all 5s ease-out;
 }
 
-.image {
-    background-color: white;
-    width: 50%;
-    height: 50%;
-    left: 10%;
-    top: 25%;
+#image {
+    top: 17%;
+    width: 32%;
+    padding-left: 100px;
+    margin-top: 42px;
     position: absolute;
    /*  animation: animation1 3s ease-in-out;
     animation-iteration-count: 1;
@@ -244,13 +243,10 @@ audio {
 }
 
 
+
 #placeholder {
     position: relative;
     width: 25%;
     left: 65%;
     color: white;
-}
-
-.image1 {
-    background-image: url("images/spaghetti.png");
 }
