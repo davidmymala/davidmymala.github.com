@@ -111,7 +111,6 @@
             overlay.style.left = "-50%";
             overlay.style.transition = "left 2s";
             document.body.style.backgroundColor = 'ivory';
-            document.getElementById('one').className = "showing";
         }
     });
     
