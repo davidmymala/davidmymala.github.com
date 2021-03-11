@@ -23,10 +23,6 @@ div{
     text-align: center;
 }
 
-h2 {
-    color: white;
-}
-
 #typewriter {
     font-family: 'Arial';  
     font-size: 28px;
@@ -173,23 +169,23 @@ audio {
 }
 
 #button1:hover {
-    background-color: red;
+    background-color: #DD6A52;
 }
 
 #button2:hover {
-    background-color: blue;
+    background-color: #6C82F6;
 }
 
 #button3:hover {
-    background-color: yellow;
+    background-color: #E2F465;
 }
 
 #button4:hover {
-    background-color: green;
+    background-color: #EACA79;
 }
 
 #button5:hover {
-    background-color: lightgreen;
+    background-color: #F0E0C2;
 }
 
 .pictures-overflow {
@@ -237,11 +233,7 @@ audio {
     padding-left: 100px;
     margin-top: 42px;
     position: absolute;
-   /*  animation: animation1 3s ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; */
 }
-
 
 
 #placeholder {
@@ -249,4 +241,10 @@ audio {
     width: 25%;
     left: 65%;
     color: white;
+    font-size: 1.1em;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#foodtitle {
+    font-family: 'Roboto', sans-serif;
 }
