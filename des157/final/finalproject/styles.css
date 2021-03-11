@@ -88,6 +88,7 @@ p {
     margin-left: auto;
     width: 300px;
     padding: 25px;
+    margin-right: 10px;
     background-color: #d8d8ce;
 }
 
@@ -104,7 +105,7 @@ input:hover{
 
 footer a {
     margin: 50px;
-    color: blue;
+    color: black;
 }
 
 
@@ -136,7 +137,7 @@ footer {
     position: absolute;
     background-color: red;
     top: 50%;
-    left: 50%;
+    left: -50%;
     transform: translate(-50%, -50%);
     width: 50vw;
     height: 50vh;
@@ -146,6 +147,7 @@ footer {
     z-index: 2;
     overflow: hidden;
 }
+
 
 
 .corner {
@@ -224,13 +226,18 @@ audio {
     width: 200px;
 }
 
-.box {
+#sun:hover {
+    transform: rotate(2520deg);
+    transition: all 5s ease-out;
+}
+
+.image {
     background-color: white;
-    width: 100px;
-    height: 100px;
-    left: 100px;
-    top: -50px;
-    position: relative;
+    width: 50%;
+    height: 50%;
+    left: 10%;
+    top: 25%;
+    position: absolute;
    /*  animation: animation1 3s ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards; */
@@ -242,4 +249,8 @@ audio {
     width: 25%;
     left: 65%;
     color: white;
+}
+
+.image1 {
+    background-image: url("images/spaghetti.png");
 }

@@ -10,64 +10,52 @@
     const Btn4 = document.getElementById('button5');
 
     const overlay = document.getElementById('overlay');
-    const box = document.getElementById('box');
+    const imageover = document.getElementsByClassName('image')
     const closeBtns = document.querySelectorAll(".close");
 
+    const allBtn = document.querySelectorAll('input');
 
 
-    //Sound effects for buttons. Will change later to target all.
-    Btn.addEventListener('mouseover', function(){
-        const beep = new Audio ('audio/beep-21.mp3');
-        beep.play();
-    });
-
-    Btn1.addEventListener('mouseover', function(){
-        const beep = new Audio ('audio/beep-21.mp3');
-        beep.play();
-    });
-    
-
-    Btn2.addEventListener('mouseover', function(){
-        const beep = new Audio ('audio/beep-21.mp3');
-        beep.play();
-    });
-    
-
-    Btn3.addEventListener('mouseover', function(){
-        const beep = new Audio ('audio/beep-21.mp3');
-        beep.play();
-    });
-    
-
-    Btn4.addEventListener('mouseover', function(){
-        const beep = new Audio ('audio/beep-21.mp3');
-        beep.play();
-        Btn4.style.hover
-    });
+    for (const BtnC of allBtn) {
+        BtnC.addEventListener('mouseover', function(){
+            const beep = new Audio ('audio/beep-21.mp3');
+            beep.play();
+        });
+    }
     
     //click functions
     Btn.addEventListener('click', function(){
         overlay.style.backgroundColor = "red";
         overlay.className = 'showing';
+        overlay.style.left = "50%";
+        overlay.style.transition = "left 2s";
     });
 
     Btn1.addEventListener('click', function(){
-        overlay.style.backgroundColor = "blue";
+        overlay.style.backgroundColor = "#A480F5";
         overlay.className = 'showing';
-        box;
+        overlay.style.left = "50%";
+        overlay.style.transition = "left 2s";
+        imageover.innerHTML = `<img src = "images/pizza.png" alt = "pizza">`;
     });
 
     Btn2.addEventListener('click', function(){
-        overlay.style.backgroundColor = "yellow";
+        overlay.style.backgroundColor = "#F0E944";
         overlay.className = 'showing';
+        overlay.style.left = "50%";
+        overlay.style.transition = "left 2s";
     });
     Btn3.addEventListener('click', function(){
         overlay.style.backgroundColor = "green";
         overlay.className = 'showing';
+        overlay.style.left = "50%";
+        overlay.style.transition = "left 2s";
     });
     Btn4.addEventListener('click', function(){
         overlay.style.backgroundColor = "lightgreen";
         overlay.className = 'showing';
+        overlay.style.left = "50%";
+        overlay.style.transition = "left 2s";
     });
     
 
@@ -82,7 +70,9 @@
     for(const eachBtn of closeBtns) {
         eachBtn.addEventListener("click", function(event){
             event.preventDefault();
-            document.querySelector(".showing").className = "overlay hidden";
+           /*  document.querySelector(".showing").className = "overlay hidden"; */
+            overlay.style.left = "-50%";
+            overlay.style.transition = "left 2s";
         });
     }
 
