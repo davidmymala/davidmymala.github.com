@@ -20,9 +20,13 @@
 
     //strings that display when clicking on the options.
     const output = `This spaghetti is the <u>best</u> thing I have ever eaten! I have to know the <u>recipe</u> for this! Please do not keep this a <u>secret</u>. I am going to tell all my <u>homies</u>. I look forward to coming back to eat this again in <u> three weeks</u>. `;
+
     const output2 = `These grapes are <u>very</u> good! It is just the <u>perfect</u> season to enjoy. I can eat about <u>10,000</u> of these. I do not think I can <u>share</u> these at all. Please let me know what <u>location</u> these were picked from.`;
+
     const output3 = `This banana is just <u>ripe</u>! I haven't <u>tasted</u> a banana like this in years! The <u>merchant</u> selling bananas by my house never has this type of <u>quality</u>. I hope you are able to <u>stick</u> around town a while longer. `;
+
     const output4 = `This might be the <u>best</u> watermelon that I have ever eaten. I do not usually give <u>credit</u> to food like this. I can tell that this has been harvested <u>well</u>. I might have to tell the <u>mayor</u> about your <u>product</u>. `;
+    
     const output5 = `I have traveled all around <u>the 50 states</u> and nothing comes close to this <u>kind</u> of pizza. A <u>New York</u> slice is truly the best! I might have to even <u>consider</u> moving here because of the <u>good</u> food.`;
 
     //Sounds when hoving over the buttons
@@ -107,6 +111,7 @@
             overlay.style.left = "-50%";
             overlay.style.transition = "left 2s";
             document.body.style.backgroundColor = 'ivory';
+            document.getElementById('one').className = "showing";
         }
     });
     
